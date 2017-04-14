@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'DiplomaCollecting_Houduan.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'MyExpress',
+        'PASSWORD': '52987632',
+        'USER': 'root',
+        'HOST': '123.206.49.116',
+        'PORT': 3306,
     }
 }
 
